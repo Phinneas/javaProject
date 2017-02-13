@@ -1,0 +1,710 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building cp130 01
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ cp130 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ cp130 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ cp130 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Users\Chester\workspace\beardcl-04\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ cp130 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ cp130 ---
+[INFO] Surefire report directory: C:\Users\Chester\workspace\beardcl-04\target\surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running edu.uw.TestSuite
+Aug 08, 2014 4:26:26 PM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1c0cd80: startup date [Fri Aug 08 16:26:26 PDT 2014]; root of context hierarchy
+Aug 08, 2014 4:26:27 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from class path resource [context.xml]
+Aug 08, 2014 4:26:28 PM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@16998b9: defining beans [AccountFactory,Address,CreditCard,Account,AccountManagerFactory,DaoFactory,BrokerFactory]; root of factory hierarchy
+Aug 08, 2014 4:26:29 PM edu.uw.beardcl.account.ThisAccountFactory newAccount
+WARNING: Error creating new account
+edu.uw.ext.framework.account.AccountException
+	at edu.uw.beardcl.account.ThisAccount.setName(ThisAccount.java:197)
+	at edu.uw.beardcl.account.ThisAccountFactory.newAccount(ThisAccountFactory.java:30)
+	at edu.uw.beardcl.account.ThisAccountFactory.newAccount(ThisAccountFactory.java:14)
+	at test.AccountTest.testBadNameAccountCreation(AccountTest.java:190)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.junit.runners.Suite.runChild(Suite.java:127)
+	at org.junit.runners.Suite.runChild(Suite.java:26)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+Aug 08, 2014 4:26:29 PM org.springframework.context.support.AbstractApplicationContext doClose
+INFO: Closing org.springframework.context.support.ClassPathXmlApplicationContext@1c0cd80: startup date [Fri Aug 08 16:26:26 PDT 2014]; root of context hierarchy
+Aug 08, 2014 4:26:29 PM org.springframework.beans.factory.support.DefaultSingletonBeanRegistry destroySingletons
+INFO: Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@16998b9: defining beans [AccountFactory,Address,CreditCard,Account,AccountManagerFactory,DaoFactory,BrokerFactory]; root of factory hierarchy
+Aug 08, 2014 4:26:29 PM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@857c75: startup date [Fri Aug 08 16:26:29 PDT 2014]; root of context hierarchy
+Aug 08, 2014 4:26:29 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from class path resource [context.xml]
+Aug 08, 2014 4:26:29 PM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7d1a7a: defining beans [AccountFactory,Address,CreditCard,Account,AccountManagerFactory,DaoFactory,BrokerFactory]; root of factory hierarchy
+Aug 08, 2014 4:26:29 PM org.springframework.context.support.AbstractApplicationContext doClose
+INFO: Closing org.springframework.context.support.ClassPathXmlApplicationContext@857c75: startup date [Fri Aug 08 16:26:29 PDT 2014]; root of context hierarchy
+Aug 08, 2014 4:26:29 PM org.springframework.beans.factory.support.DefaultSingletonBeanRegistry destroySingletons
+INFO: Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7d1a7a: defining beans [AccountFactory,Address,CreditCard,Account,AccountManagerFactory,DaoFactory,BrokerFactory]; root of factory hierarchy
+Aug 08, 2014 4:26:29 PM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@d00c99: startup date [Fri Aug 08 16:26:29 PDT 2014]; root of context hierarchy
+Aug 08, 2014 4:26:29 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from class path resource [context.xml]
+Aug 08, 2014 4:26:29 PM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@a4fe7c: defining beans [AccountFactory,Address,CreditCard,Account,AccountManagerFactory,DaoFactory,BrokerFactory]; root of factory hierarchy
+Aug 08, 2014 4:26:29 PM org.springframework.context.support.AbstractApplicationContext doClose
+INFO: Closing org.springframework.context.support.ClassPathXmlApplicationContext@d00c99: startup date [Fri Aug 08 16:26:29 PDT 2014]; root of context hierarchy
+Aug 08, 2014 4:26:29 PM org.springframework.beans.factory.support.DefaultSingletonBeanRegistry destroySingletons
+INFO: Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@a4fe7c: defining beans [AccountFactory,Address,CreditCard,Account,AccountManagerFactory,DaoFactory,BrokerFactory]; root of factory hierarchy
+Aug 08, 2014 4:26:29 PM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3f97d7: startup date [Fri Aug 08 16:26:29 PDT 2014]; root of context hierarchy
+Aug 08, 2014 4:26:29 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from class path resource [context.xml]
+Aug 08, 2014 4:26:30 PM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@23fcb: defining beans [AccountFactory,Address,CreditCard,Account,AccountManagerFactory,DaoFactory,BrokerFactory]; root of factory hierarchy
+Aug 08, 2014 4:26:30 PM org.springframework.context.support.AbstractApplicationContext doClose
+INFO: Closing org.springframework.context.support.ClassPathXmlApplicationContext@3f97d7: startup date [Fri Aug 08 16:26:29 PDT 2014]; root of context hierarchy
+Aug 08, 2014 4:26:30 PM org.springframework.beans.factory.support.DefaultSingletonBeanRegistry destroySingletons
+INFO: Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@23fcb: defining beans [AccountFactory,Address,CreditCard,Account,AccountManagerFactory,DaoFactory,BrokerFactory]; root of factory hierarchy
+Aug 08, 2014 4:26:30 PM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@bd3f80: startup date [Fri Aug 08 16:26:30 PDT 2014]; root of context hierarchy
+Aug 08, 2014 4:26:30 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from class path resource [context.xml]
+Aug 08, 2014 4:26:30 PM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@89e41: defining beans [AccountFactory,Address,CreditCard,Account,AccountManagerFactory,DaoFactory,BrokerFactory]; root of factory hierarchy
+Aug 08, 2014 4:26:30 PM org.springframework.context.support.AbstractApplicationContext doClose
+INFO: Closing org.springframework.context.support.ClassPathXmlApplicationContext@bd3f80: startup date [Fri Aug 08 16:26:30 PDT 2014]; root of context hierarchy
+Aug 08, 2014 4:26:30 PM org.springframework.beans.factory.support.DefaultSingletonBeanRegistry destroySingletons
+INFO: Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@89e41: defining beans [AccountFactory,Address,CreditCard,Account,AccountManagerFactory,DaoFactory,BrokerFactory]; root of factory hierarchy
+Aug 08, 2014 4:26:30 PM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1cdc393: startup date [Fri Aug 08 16:26:30 PDT 2014]; root of context hierarchy
+Aug 08, 2014 4:26:30 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from class path resource [context.xml]
+Aug 08, 2014 4:26:30 PM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@985158: defining beans [AccountFactory,Address,CreditCard,Account,AccountManagerFactory,DaoFactory,BrokerFactory]; root of factory hierarchy
+Aug 08, 2014 4:26:30 PM edu.uw.beardcl.account.ThisAccountManager <init>
+INFO: Need to implement logger
+Aug 08, 2014 4:26:30 PM edu.uw.beardcl.account.ThisAccountManager <init>
+INFO: Logger not enabled
+Aug 08, 2014 4:26:30 PM edu.uw.beardcl.dao.JsonAccountDao getAccount
+SEVERE: File not found error in JsonAccountDao
+Aug 08, 2014 4:26:31 PM edu.uw.beardcl.dao.JsonAccountDao getAccount
+SEVERE: File not found error in JsonAccountDao
+Aug 08, 2014 4:26:31 PM edu.uw.beardcl.account.ThisAccountManager <init>
+INFO: Need to implement logger
+Aug 08, 2014 4:26:31 PM edu.uw.beardcl.account.ThisAccountManager <init>
+INFO: Logger not enabled
+Aug 08, 2014 4:26:32 PM org.springframework.context.support.AbstractApplicationContext doClose
+INFO: Closing org.springframework.context.support.ClassPathXmlApplicationContext@1cdc393: startup date [Fri Aug 08 16:26:30 PDT 2014]; root of context hierarchy
+Aug 08, 2014 4:26:32 PM org.springframework.beans.factory.support.DefaultSingletonBeanRegistry destroySingletons
+INFO: Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@985158: defining beans [AccountFactory,Address,CreditCard,Account,AccountManagerFactory,DaoFactory,BrokerFactory]; root of factory hierarchy
+Aug 08, 2014 4:26:32 PM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@a6377a: startup date [Fri Aug 08 16:26:32 PDT 2014]; root of context hierarchy
+Aug 08, 2014 4:26:32 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from class path resource [context.xml]
+Aug 08, 2014 4:26:32 PM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1ae7fa2: defining beans [AccountFactory,Address,CreditCard,Account,AccountManagerFactory,DaoFactory,BrokerFactory]; root of factory hierarchy
+Aug 08, 2014 4:26:32 PM edu.uw.beardcl.account.ThisAccountManager <init>
+INFO: Need to implement logger
+Aug 08, 2014 4:26:32 PM edu.uw.beardcl.account.ThisAccountManager <init>
+INFO: Logger not enabled
+Aug 08, 2014 4:26:32 PM edu.uw.beardcl.dao.JsonAccountDao getAccount
+SEVERE: File not found error in JsonAccountDao
+Aug 08, 2014 4:26:32 PM edu.uw.beardcl.dao.JsonAccountDao getAccount
+SEVERE: File not found error in JsonAccountDao
+Aug 08, 2014 4:26:32 PM test.AccountManagerTest testCreateDuplicateUsername
+INFO: testCreateDuplicateUsername threw exception as expected
+Aug 08, 2014 4:26:32 PM org.springframework.context.support.AbstractApplicationContext doClose
+INFO: Closing org.springframework.context.support.ClassPathXmlApplicationContext@a6377a: startup date [Fri Aug 08 16:26:32 PDT 2014]; root of context hierarchy
+Aug 08, 2014 4:26:32 PM org.springframework.beans.factory.support.DefaultSingletonBeanRegistry destroySingletons
+INFO: Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1ae7fa2: defining beans [AccountFactory,Address,CreditCard,Account,AccountManagerFactory,DaoFactory,BrokerFactory]; root of factory hierarchy
+Aug 08, 2014 4:26:32 PM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@13d6798: startup date [Fri Aug 08 16:26:32 PDT 2014]; root of context hierarchy
+Aug 08, 2014 4:26:32 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from class path resource [context.xml]
+Aug 08, 2014 4:26:32 PM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7dba1: defining beans [AccountFactory,Address,CreditCard,Account,AccountManagerFactory,DaoFactory,BrokerFactory]; root of factory hierarchy
+Aug 08, 2014 4:26:32 PM edu.uw.beardcl.account.ThisAccountManager <init>
+INFO: Need to implement logger
+Aug 08, 2014 4:26:32 PM edu.uw.beardcl.account.ThisAccountManager <init>
+INFO: Logger not enabled
+Aug 08, 2014 4:26:32 PM edu.uw.beardcl.dao.JsonAccountDao getAccount
+SEVERE: File not found error in JsonAccountDao
+Aug 08, 2014 4:26:32 PM edu.uw.beardcl.dao.JsonAccountDao getAccount
+SEVERE: File not found error in JsonAccountDao
+Aug 08, 2014 4:26:32 PM org.springframework.context.support.AbstractApplicationContext doClose
+INFO: Closing org.springframework.context.support.ClassPathXmlApplicationContext@13d6798: startup date [Fri Aug 08 16:26:32 PDT 2014]; root of context hierarchy
+Aug 08, 2014 4:26:32 PM org.springframework.beans.factory.support.DefaultSingletonBeanRegistry destroySingletons
+INFO: Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7dba1: defining beans [AccountFactory,Address,CreditCard,Account,AccountManagerFactory,DaoFactory,BrokerFactory]; root of factory hierarchy
+Aug 08, 2014 4:26:32 PM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1e44bf8: startup date [Fri Aug 08 16:26:32 PDT 2014]; root of context hierarchy
+Aug 08, 2014 4:26:32 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from class path resource [context.xml]
+Aug 08, 2014 4:26:32 PM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@536ac6: defining beans [AccountFactory,Address,CreditCard,Account,AccountManagerFactory,DaoFactory,BrokerFactory]; root of factory hierarchy
+Aug 08, 2014 4:26:32 PM edu.uw.beardcl.account.ThisAccountManager <init>
+INFO: Need to implement logger
+Aug 08, 2014 4:26:32 PM edu.uw.beardcl.account.ThisAccountManager <init>
+INFO: Logger not enabled
+Aug 08, 2014 4:26:32 PM edu.uw.beardcl.dao.JsonAccountDao getAccount
+SEVERE: File not found error in JsonAccountDao
+Aug 08, 2014 4:26:32 PM edu.uw.beardcl.dao.JsonAccountDao getAccount
+SEVERE: File not found error in JsonAccountDao
+Aug 08, 2014 4:26:32 PM edu.uw.beardcl.account.ThisAccountManager <init>
+INFO: Need to implement logger
+Aug 08, 2014 4:26:32 PM edu.uw.beardcl.account.ThisAccountManager <init>
+INFO: Logger not enabled
+Aug 08, 2014 4:26:32 PM org.springframework.context.support.AbstractApplicationContext doClose
+INFO: Closing org.springframework.context.support.ClassPathXmlApplicationContext@1e44bf8: startup date [Fri Aug 08 16:26:32 PDT 2014]; root of context hierarchy
+Aug 08, 2014 4:26:32 PM org.springframework.beans.factory.support.DefaultSingletonBeanRegistry destroySingletons
+INFO: Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@536ac6: defining beans [AccountFactory,Address,CreditCard,Account,AccountManagerFactory,DaoFactory,BrokerFactory]; root of factory hierarchy
+Aug 08, 2014 4:26:32 PM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@179bf17: startup date [Fri Aug 08 16:26:32 PDT 2014]; root of context hierarchy
+Aug 08, 2014 4:26:32 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from class path resource [context.xml]
+Aug 08, 2014 4:26:32 PM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1011211: defining beans [AccountFactory,Address,CreditCard,Account,AccountManagerFactory,DaoFactory,BrokerFactory]; root of factory hierarchy
+Aug 08, 2014 4:26:32 PM edu.uw.beardcl.account.ThisAccountManager <init>
+INFO: Need to implement logger
+Aug 08, 2014 4:26:32 PM edu.uw.beardcl.account.ThisAccountManager <init>
+INFO: Logger not enabled
+Aug 08, 2014 4:26:32 PM edu.uw.beardcl.dao.JsonAccountDao getAccount
+SEVERE: File not found error in JsonAccountDao
+Aug 08, 2014 4:26:32 PM edu.uw.beardcl.dao.JsonAccountDao getAccount
+SEVERE: File not found error in JsonAccountDao
+Aug 08, 2014 4:26:32 PM org.springframework.context.support.AbstractApplicationContext doClose
+INFO: Closing org.springframework.context.support.ClassPathXmlApplicationContext@179bf17: startup date [Fri Aug 08 16:26:32 PDT 2014]; root of context hierarchy
+Aug 08, 2014 4:26:32 PM org.springframework.beans.factory.support.DefaultSingletonBeanRegistry destroySingletons
+INFO: Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1011211: defining beans [AccountFactory,Address,CreditCard,Account,AccountManagerFactory,DaoFactory,BrokerFactory]; root of factory hierarchy
+Aug 08, 2014 4:26:32 PM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@14951ff: startup date [Fri Aug 08 16:26:32 PDT 2014]; root of context hierarchy
+Aug 08, 2014 4:26:33 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from class path resource [context.xml]
+Aug 08, 2014 4:26:33 PM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3b55a5: defining beans [AccountFactory,Address,CreditCard,Account,AccountManagerFactory,DaoFactory,BrokerFactory]; root of factory hierarchy
+Aug 08, 2014 4:26:33 PM edu.uw.beardcl.account.ThisAccountManager <init>
+INFO: Need to implement logger
+Aug 08, 2014 4:26:33 PM edu.uw.beardcl.account.ThisAccountManager <init>
+INFO: Logger not enabled
+Aug 08, 2014 4:26:33 PM edu.uw.beardcl.dao.JsonAccountDao getAccount
+SEVERE: File not found error in JsonAccountDao
+Aug 08, 2014 4:26:33 PM edu.uw.beardcl.dao.JsonAccountDao getAccount
+SEVERE: File not found error in JsonAccountDao
+Aug 08, 2014 4:26:33 PM edu.uw.beardcl.dao.JsonAccountDao getAccount
+SEVERE: File not found error in JsonAccountDao
+Aug 08, 2014 4:26:33 PM org.springframework.context.support.AbstractApplicationContext doClose
+INFO: Closing org.springframework.context.support.ClassPathXmlApplicationContext@14951ff: startup date [Fri Aug 08 16:26:32 PDT 2014]; root of context hierarchy
+Aug 08, 2014 4:26:33 PM org.springframework.beans.factory.support.DefaultSingletonBeanRegistry destroySingletons
+INFO: Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3b55a5: defining beans [AccountFactory,Address,CreditCard,Account,AccountManagerFactory,DaoFactory,BrokerFactory]; root of factory hierarchy
+Aug 08, 2014 4:26:33 PM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@151cf84: startup date [Fri Aug 08 16:26:33 PDT 2014]; root of context hierarchy
+Aug 08, 2014 4:26:33 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from class path resource [context.xml]
+Aug 08, 2014 4:26:33 PM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@112a36e: defining beans [AccountFactory,Address,CreditCard,Account,AccountManagerFactory,DaoFactory,BrokerFactory]; root of factory hierarchy
+Aug 08, 2014 4:26:33 PM edu.uw.beardcl.account.ThisAccountManager <init>
+INFO: Need to implement logger
+Aug 08, 2014 4:26:33 PM edu.uw.beardcl.account.ThisAccountManager <init>
+INFO: Logger not enabled
+Aug 08, 2014 4:26:33 PM edu.uw.beardcl.dao.JsonAccountDao getAccount
+SEVERE: File not found error in JsonAccountDao
+Aug 08, 2014 4:26:33 PM edu.uw.beardcl.dao.JsonAccountDao getAccount
+SEVERE: File not found error in JsonAccountDao
+Aug 08, 2014 4:26:33 PM org.springframework.context.support.AbstractApplicationContext doClose
+INFO: Closing org.springframework.context.support.ClassPathXmlApplicationContext@151cf84: startup date [Fri Aug 08 16:26:33 PDT 2014]; root of context hierarchy
+Aug 08, 2014 4:26:33 PM org.springframework.beans.factory.support.DefaultSingletonBeanRegistry destroySingletons
+INFO: Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@112a36e: defining beans [AccountFactory,Address,CreditCard,Account,AccountManagerFactory,DaoFactory,BrokerFactory]; root of factory hierarchy
+Aug 08, 2014 4:26:33 PM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@a7ac22: startup date [Fri Aug 08 16:26:33 PDT 2014]; root of context hierarchy
+Aug 08, 2014 4:26:33 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from class path resource [context.xml]
+Aug 08, 2014 4:26:34 PM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@840613: defining beans [AccountFactory,Address,CreditCard,Account,AccountManagerFactory,DaoFactory,BrokerFactory]; root of factory hierarchy
+Aug 08, 2014 4:26:34 PM edu.uw.beardcl.account.ThisAccountManager <init>
+INFO: Need to implement logger
+Aug 08, 2014 4:26:34 PM edu.uw.beardcl.account.ThisAccountManager <init>
+INFO: Logger not enabled
+Aug 08, 2014 4:26:34 PM edu.uw.beardcl.dao.JsonAccountDao getAccount
+SEVERE: File not found error in JsonAccountDao
+Aug 08, 2014 4:26:34 PM edu.uw.beardcl.dao.JsonAccountDao getAccount
+SEVERE: File not found error in JsonAccountDao
+Aug 08, 2014 4:26:34 PM edu.uw.beardcl.dao.JsonAccountDao getAccount
+SEVERE: File not found error in JsonAccountDao
+Aug 08, 2014 4:26:34 PM org.springframework.context.support.AbstractApplicationContext doClose
+INFO: Closing org.springframework.context.support.ClassPathXmlApplicationContext@a7ac22: startup date [Fri Aug 08 16:26:33 PDT 2014]; root of context hierarchy
+Aug 08, 2014 4:26:34 PM org.springframework.beans.factory.support.DefaultSingletonBeanRegistry destroySingletons
+INFO: Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@840613: defining beans [AccountFactory,Address,CreditCard,Account,AccountManagerFactory,DaoFactory,BrokerFactory]; root of factory hierarchy
+Aug 08, 2014 4:26:34 PM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@19af353: startup date [Fri Aug 08 16:26:34 PDT 2014]; root of context hierarchy
+Aug 08, 2014 4:26:34 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from class path resource [context.xml]
+Aug 08, 2014 4:26:34 PM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@b6c864: defining beans [AccountFactory,Address,CreditCard,Account,AccountManagerFactory,DaoFactory,BrokerFactory]; root of factory hierarchy
+Aug 08, 2014 4:26:34 PM edu.uw.beardcl.account.ThisAccountManager <init>
+INFO: Need to implement logger
+Aug 08, 2014 4:26:34 PM edu.uw.beardcl.account.ThisAccountManager <init>
+INFO: Logger not enabled
+Aug 08, 2014 4:26:34 PM edu.uw.beardcl.dao.JsonAccountDao getAccount
+SEVERE: File not found error in JsonAccountDao
+Aug 08, 2014 4:26:34 PM edu.uw.beardcl.dao.JsonAccountDao getAccount
+SEVERE: File not found error in JsonAccountDao
+Aug 08, 2014 4:26:34 PM edu.uw.beardcl.dao.JsonAccountDao getAccount
+SEVERE: File not found error in JsonAccountDao
+Aug 08, 2014 4:26:34 PM org.springframework.context.support.AbstractApplicationContext doClose
+INFO: Closing org.springframework.context.support.ClassPathXmlApplicationContext@19af353: startup date [Fri Aug 08 16:26:34 PDT 2014]; root of context hierarchy
+Aug 08, 2014 4:26:34 PM org.springframework.beans.factory.support.DefaultSingletonBeanRegistry destroySingletons
+INFO: Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@b6c864: defining beans [AccountFactory,Address,CreditCard,Account,AccountManagerFactory,DaoFactory,BrokerFactory]; root of factory hierarchy
+Aug 08, 2014 4:26:34 PM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1e4dd0: startup date [Fri Aug 08 16:26:34 PDT 2014]; root of context hierarchy
+Aug 08, 2014 4:26:34 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from class path resource [context.xml]
+Aug 08, 2014 4:26:34 PM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@e7bff3: defining beans [AccountFactory,Address,CreditCard,Account,AccountManagerFactory,DaoFactory,BrokerFactory]; root of factory hierarchy
+Aug 08, 2014 4:26:34 PM org.springframework.context.support.AbstractApplicationContext doClose
+INFO: Closing org.springframework.context.support.ClassPathXmlApplicationContext@1e4dd0: startup date [Fri Aug 08 16:26:34 PDT 2014]; root of context hierarchy
+Aug 08, 2014 4:26:34 PM org.springframework.beans.factory.support.DefaultSingletonBeanRegistry destroySingletons
+INFO: Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@e7bff3: defining beans [AccountFactory,Address,CreditCard,Account,AccountManagerFactory,DaoFactory,BrokerFactory]; root of factory hierarchy
+Aug 08, 2014 4:26:34 PM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@13172b5: startup date [Fri Aug 08 16:26:34 PDT 2014]; root of context hierarchy
+Aug 08, 2014 4:26:34 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from class path resource [context.xml]
+Aug 08, 2014 4:26:34 PM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1580d5e: defining beans [AccountFactory,Address,CreditCard,Account,AccountManagerFactory,DaoFactory,BrokerFactory]; root of factory hierarchy
+Aug 08, 2014 4:26:35 PM edu.uw.beardcl.dao.JsonAccountDao getAccount
+SEVERE: File not found error in JsonAccountDao
+Aug 08, 2014 4:26:35 PM edu.uw.beardcl.dao.JsonAccountDao getAccount
+SEVERE: File not found error in JsonAccountDao
+Aug 08, 2014 4:26:35 PM edu.uw.beardcl.dao.JsonAccountDao getAccount
+SEVERE: File not found error in JsonAccountDao
+Aug 08, 2014 4:26:35 PM edu.uw.beardcl.dao.JsonAccountDao getAccount
+SEVERE: File not found error in JsonAccountDao
+Aug 08, 2014 4:26:35 PM org.springframework.context.support.AbstractApplicationContext doClose
+INFO: Closing org.springframework.context.support.ClassPathXmlApplicationContext@13172b5: startup date [Fri Aug 08 16:26:34 PDT 2014]; root of context hierarchy
+Aug 08, 2014 4:26:35 PM org.springframework.beans.factory.support.DefaultSingletonBeanRegistry destroySingletons
+INFO: Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1580d5e: defining beans [AccountFactory,Address,CreditCard,Account,AccountManagerFactory,DaoFactory,BrokerFactory]; root of factory hierarchy
+Aug 08, 2014 4:26:35 PM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1fb75c7: startup date [Fri Aug 08 16:26:35 PDT 2014]; root of context hierarchy
+Aug 08, 2014 4:26:35 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from class path resource [context.xml]
+Aug 08, 2014 4:26:35 PM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@15109cf: defining beans [AccountFactory,Address,CreditCard,Account,AccountManagerFactory,DaoFactory,BrokerFactory]; root of factory hierarchy
+Aug 08, 2014 4:26:35 PM edu.uw.beardcl.dao.JsonAccountDao getAccount
+SEVERE: File not found error in JsonAccountDao
+Aug 08, 2014 4:26:35 PM org.springframework.context.support.AbstractApplicationContext doClose
+INFO: Closing org.springframework.context.support.ClassPathXmlApplicationContext@1fb75c7: startup date [Fri Aug 08 16:26:35 PDT 2014]; root of context hierarchy
+Aug 08, 2014 4:26:35 PM org.springframework.beans.factory.support.DefaultSingletonBeanRegistry destroySingletons
+INFO: Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@15109cf: defining beans [AccountFactory,Address,CreditCard,Account,AccountManagerFactory,DaoFactory,BrokerFactory]; root of factory hierarchy
+Aug 08, 2014 4:26:35 PM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1b910b0: startup date [Fri Aug 08 16:26:35 PDT 2014]; root of context hierarchy
+Aug 08, 2014 4:26:35 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from class path resource [context.xml]
+Aug 08, 2014 4:26:35 PM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1d603f5: defining beans [AccountFactory,Address,CreditCard,Account,AccountManagerFactory,DaoFactory,BrokerFactory]; root of factory hierarchy
+Aug 08, 2014 4:26:36 PM org.springframework.context.support.AbstractApplicationContext doClose
+INFO: Closing org.springframework.context.support.ClassPathXmlApplicationContext@1b910b0: startup date [Fri Aug 08 16:26:35 PDT 2014]; root of context hierarchy
+Aug 08, 2014 4:26:36 PM org.springframework.beans.factory.support.DefaultSingletonBeanRegistry destroySingletons
+INFO: Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1d603f5: defining beans [AccountFactory,Address,CreditCard,Account,AccountManagerFactory,DaoFactory,BrokerFactory]; root of factory hierarchy
+Aug 08, 2014 4:26:36 PM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@17e21e3: startup date [Fri Aug 08 16:26:36 PDT 2014]; root of context hierarchy
+Aug 08, 2014 4:26:36 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from class path resource [context.xml]
+Aug 08, 2014 4:26:36 PM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1990e2d: defining beans [AccountFactory,Address,CreditCard,Account,AccountManagerFactory,DaoFactory,BrokerFactory]; root of factory hierarchy
+Aug 08, 2014 4:26:37 PM org.springframework.context.support.AbstractApplicationContext doClose
+INFO: Closing org.springframework.context.support.ClassPathXmlApplicationContext@17e21e3: startup date [Fri Aug 08 16:26:36 PDT 2014]; root of context hierarchy
+Aug 08, 2014 4:26:37 PM org.springframework.beans.factory.support.DefaultSingletonBeanRegistry destroySingletons
+INFO: Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1990e2d: defining beans [AccountFactory,Address,CreditCard,Account,AccountManagerFactory,DaoFactory,BrokerFactory]; root of factory hierarchy
+Aug 08, 2014 4:26:37 PM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@13e7d19: startup date [Fri Aug 08 16:26:37 PDT 2014]; root of context hierarchy
+Aug 08, 2014 4:26:37 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from class path resource [context.xml]
+Aug 08, 2014 4:26:37 PM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@a2cdd: defining beans [AccountFactory,Address,CreditCard,Account,AccountManagerFactory,DaoFactory,BrokerFactory]; root of factory hierarchy
+Aug 08, 2014 4:26:37 PM org.springframework.context.support.AbstractApplicationContext doClose
+INFO: Closing org.springframework.context.support.ClassPathXmlApplicationContext@13e7d19: startup date [Fri Aug 08 16:26:37 PDT 2014]; root of context hierarchy
+Aug 08, 2014 4:26:37 PM org.springframework.beans.factory.support.DefaultSingletonBeanRegistry destroySingletons
+INFO: Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@a2cdd: defining beans [AccountFactory,Address,CreditCard,Account,AccountManagerFactory,DaoFactory,BrokerFactory]; root of factory hierarchy
+Aug 08, 2014 4:26:37 PM edu.uw.beardcl.account.ThisAccountManager <init>
+INFO: Need to implement logger
+Aug 08, 2014 4:26:37 PM edu.uw.beardcl.account.ThisAccountManager <init>
+INFO: Logger not enabled
+Aug 08, 2014 4:26:37 PM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@38eb55: startup date [Fri Aug 08 16:26:37 PDT 2014]; root of context hierarchy
+Aug 08, 2014 4:26:37 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from class path resource [context.xml]
+Aug 08, 2014 4:26:37 PM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3e54a: defining beans [AccountFactory,Address,CreditCard,Account,AccountManagerFactory,DaoFactory,BrokerFactory]; root of factory hierarchy
+Aug 08, 2014 4:26:37 PM org.springframework.context.support.AbstractApplicationContext doClose
+INFO: Closing org.springframework.context.support.ClassPathXmlApplicationContext@38eb55: startup date [Fri Aug 08 16:26:37 PDT 2014]; root of context hierarchy
+Aug 08, 2014 4:26:37 PM org.springframework.beans.factory.support.DefaultSingletonBeanRegistry destroySingletons
+INFO: Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3e54a: defining beans [AccountFactory,Address,CreditCard,Account,AccountManagerFactory,DaoFactory,BrokerFactory]; root of factory hierarchy
+Aug 08, 2014 4:26:37 PM edu.uw.beardcl.account.ThisAccountManager <init>
+INFO: Need to implement logger
+Aug 08, 2014 4:26:37 PM edu.uw.beardcl.account.ThisAccountManager <init>
+INFO: Logger not enabled
+Aug 08, 2014 4:26:37 PM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1c28a6a: startup date [Fri Aug 08 16:26:37 PDT 2014]; root of context hierarchy
+Aug 08, 2014 4:26:37 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from class path resource [context.xml]
+Aug 08, 2014 4:26:37 PM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@ff7853: defining beans [AccountFactory,Address,CreditCard,Account,AccountManagerFactory,DaoFactory,BrokerFactory]; root of factory hierarchy
+Aug 08, 2014 4:26:37 PM org.springframework.context.support.AbstractApplicationContext doClose
+INFO: Closing org.springframework.context.support.ClassPathXmlApplicationContext@1c28a6a: startup date [Fri Aug 08 16:26:37 PDT 2014]; root of context hierarchy
+Aug 08, 2014 4:26:37 PM org.springframework.beans.factory.support.DefaultSingletonBeanRegistry destroySingletons
+INFO: Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@ff7853: defining beans [AccountFactory,Address,CreditCard,Account,AccountManagerFactory,DaoFactory,BrokerFactory]; root of factory hierarchy
+Aug 08, 2014 4:26:37 PM edu.uw.beardcl.account.ThisAccountManager <init>
+INFO: Need to implement logger
+Aug 08, 2014 4:26:37 PM edu.uw.beardcl.account.ThisAccountManager <init>
+INFO: Logger not enabled
+Aug 08, 2014 4:26:37 PM edu.uw.beardcl.dao.JsonAccountDao getAccount
+SEVERE: File not found error in JsonAccountDao
+Aug 08, 2014 4:26:37 PM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@fc0795: startup date [Fri Aug 08 16:26:37 PDT 2014]; root of context hierarchy
+Aug 08, 2014 4:26:37 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from class path resource [context.xml]
+Aug 08, 2014 4:26:37 PM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@19699dd: defining beans [AccountFactory,Address,CreditCard,Account,AccountManagerFactory,DaoFactory,BrokerFactory]; root of factory hierarchy
+Aug 08, 2014 4:26:37 PM org.springframework.context.support.AbstractApplicationContext doClose
+INFO: Closing org.springframework.context.support.ClassPathXmlApplicationContext@fc0795: startup date [Fri Aug 08 16:26:37 PDT 2014]; root of context hierarchy
+Aug 08, 2014 4:26:37 PM org.springframework.beans.factory.support.DefaultSingletonBeanRegistry destroySingletons
+INFO: Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@19699dd: defining beans [AccountFactory,Address,CreditCard,Account,AccountManagerFactory,DaoFactory,BrokerFactory]; root of factory hierarchy
+Aug 08, 2014 4:26:38 PM edu.uw.beardcl.account.ThisAccountManager <init>
+INFO: Need to implement logger
+Aug 08, 2014 4:26:38 PM edu.uw.beardcl.account.ThisAccountManager <init>
+INFO: Logger not enabled
+Aug 08, 2014 4:26:38 PM edu.uw.beardcl.dao.JsonAccountDao getAccount
+SEVERE: File not found error in JsonAccountDao
+Aug 08, 2014 4:26:38 PM test.BrokerTest addOrders
+INFO: Adding orders
+Aug 08, 2014 4:26:38 PM test.BrokerTest addOrders
+INFO: Done adding orders
+Aug 08, 2014 4:26:40 PM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1fb14e: startup date [Fri Aug 08 16:26:40 PDT 2014]; root of context hierarchy
+Aug 08, 2014 4:26:40 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from class path resource [context.xml]
+Aug 08, 2014 4:26:40 PM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@12155d2: defining beans [AccountFactory,Address,CreditCard,Account,AccountManagerFactory,DaoFactory,BrokerFactory]; root of factory hierarchy
+Aug 08, 2014 4:26:40 PM org.springframework.context.support.AbstractApplicationContext doClose
+INFO: Closing org.springframework.context.support.ClassPathXmlApplicationContext@1fb14e: startup date [Fri Aug 08 16:26:40 PDT 2014]; root of context hierarchy
+Aug 08, 2014 4:26:40 PM org.springframework.beans.factory.support.DefaultSingletonBeanRegistry destroySingletons
+INFO: Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@12155d2: defining beans [AccountFactory,Address,CreditCard,Account,AccountManagerFactory,DaoFactory,BrokerFactory]; root of factory hierarchy
+Aug 08, 2014 4:26:40 PM edu.uw.beardcl.account.ThisAccountManager <init>
+INFO: Need to implement logger
+Aug 08, 2014 4:26:40 PM edu.uw.beardcl.account.ThisAccountManager <init>
+INFO: Logger not enabled
+Aug 08, 2014 4:26:40 PM edu.uw.beardcl.dao.JsonAccountDao getAccount
+SEVERE: File not found error in JsonAccountDao
+Aug 08, 2014 4:26:40 PM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1f95fc4: startup date [Fri Aug 08 16:26:40 PDT 2014]; root of context hierarchy
+Aug 08, 2014 4:26:40 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from class path resource [context.xml]
+Aug 08, 2014 4:26:40 PM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@18ce197: defining beans [AccountFactory,Address,CreditCard,Account,AccountManagerFactory,DaoFactory,BrokerFactory]; root of factory hierarchy
+Aug 08, 2014 4:26:40 PM org.springframework.context.support.AbstractApplicationContext doClose
+INFO: Closing org.springframework.context.support.ClassPathXmlApplicationContext@1f95fc4: startup date [Fri Aug 08 16:26:40 PDT 2014]; root of context hierarchy
+Aug 08, 2014 4:26:40 PM org.springframework.beans.factory.support.DefaultSingletonBeanRegistry destroySingletons
+INFO: Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@18ce197: defining beans [AccountFactory,Address,CreditCard,Account,AccountManagerFactory,DaoFactory,BrokerFactory]; root of factory hierarchy
+Aug 08, 2014 4:26:40 PM edu.uw.beardcl.account.ThisAccountManager <init>
+INFO: Need to implement logger
+Aug 08, 2014 4:26:40 PM edu.uw.beardcl.account.ThisAccountManager <init>
+INFO: Logger not enabled
+Aug 08, 2014 4:26:40 PM edu.uw.beardcl.dao.JsonAccountDao getAccount
+SEVERE: File not found error in JsonAccountDao
+Aug 08, 2014 4:26:40 PM test.BrokerTest addOrders
+INFO: Adding orders
+Aug 08, 2014 4:26:40 PM test.BrokerTest addOrders
+INFO: Done adding orders
+Tests run: 25, Failures: 2, Errors: 2, Skipped: 0, Time elapsed: 19.228 sec <<< FAILURE!
+testGetAccount(test.BrokerTest)  Time elapsed: 0.191 sec  <<< ERROR!
+java.lang.NullPointerException
+	at test.BrokerTest.testGetAccount(BrokerTest.java:281)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.junit.runners.Suite.runChild(Suite.java:127)
+	at org.junit.runners.Suite.runChild(Suite.java:26)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+testBrokerExchangeOpen(test.BrokerTest)  Time elapsed: 2.326 sec  <<< FAILURE!
+java.lang.AssertionError: Market orders should be processed, the market is open, 0 orders executed, expected 3.
+	at org.junit.Assert.fail(Assert.java:88)
+	at test.BrokerTest.testBrokerExchangeOpen(BrokerTest.java:372)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.junit.runners.Suite.runChild(Suite.java:127)
+	at org.junit.runners.Suite.runChild(Suite.java:26)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+testDeleteAccount(test.BrokerTest)  Time elapsed: 0.186 sec  <<< ERROR!
+java.lang.NullPointerException
+	at test.BrokerTest.testDeleteAccount(BrokerTest.java:256)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.junit.runners.Suite.runChild(Suite.java:127)
+	at org.junit.runners.Suite.runChild(Suite.java:26)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+testBrokerExchangeClosed(test.BrokerTest)  Time elapsed: 4.249 sec  <<< FAILURE!
+java.lang.AssertionError: Market orders should be processed once the market opens, 0 orders executed, expected 3.
+	at org.junit.Assert.fail(Assert.java:88)
+	at test.BrokerTest.testBrokerExchangeClosed(BrokerTest.java:328)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.junit.runners.Suite.runChild(Suite.java:127)
+	at org.junit.runners.Suite.runChild(Suite.java:26)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+Running test.OrderManagerTest
+Aug 08, 2014 4:26:44 PM test.AbstractOrderManagerTest testOrderManager
+INFO: Test 1: Buy orders
+Aug 08, 2014 4:26:44 PM test.AbstractOrderManagerTest testOrderManager
+INFO: Adjusting price to: 10005
+Aug 08, 2014 4:26:44 PM test.AbstractOrderManagerTest$TestOrderProcssor process
+INFO:     Processed order: StopBuyOrder for Account russ: 100 shares of SYMB at or above 10005 [75]
+Aug 08, 2014 4:26:44 PM test.AbstractOrderManagerTest testOrderManager
+INFO: Adjusting price to: 10010
+Aug 08, 2014 4:26:44 PM test.AbstractOrderManagerTest$TestOrderProcssor process
+INFO:     Processed order: StopBuyOrder for Account russ: 100 shares of SYMB at or above 10005 [75]
+Aug 08, 2014 4:26:44 PM test.AbstractOrderManagerTest$TestOrderProcssor process
+INFO:     Processed order: StopBuyOrder for Account russ: 100 shares of SYMB at or above 10010 [76]
+Aug 08, 2014 4:26:44 PM test.AbstractOrderManagerTest testOrderManager
+INFO: Test 2: Sell orders
+Aug 08, 2014 4:26:44 PM test.AbstractOrderManagerTest testOrderManager
+INFO: Adjusting price to: 9995
+Aug 08, 2014 4:26:44 PM test.AbstractOrderManagerTest$TestOrderProcssor process
+INFO:     Processed order: StopSellOrder for Account russ: 100 shares of SYMB at or below 9995 [77]
+Aug 08, 2014 4:26:44 PM test.AbstractOrderManagerTest testOrderManager
+INFO: Adjusting price to: 9990
+Aug 08, 2014 4:26:44 PM test.AbstractOrderManagerTest$TestOrderProcssor process
+INFO:     Processed order: StopSellOrder for Account russ: 100 shares of SYMB at or below 9995 [77]
+Aug 08, 2014 4:26:44 PM test.AbstractOrderManagerTest$TestOrderProcssor process
+INFO:     Processed order: StopSellOrder for Account russ: 100 shares of SYMB at or below 9990 [78]
+Aug 08, 2014 4:26:44 PM test.AbstractOrderManagerTest testOrderManager
+INFO: Test 3: Buy & sell orders
+Aug 08, 2014 4:26:44 PM test.AbstractOrderManagerTest testOrderManager
+INFO: Adjusting price to: 10005
+Aug 08, 2014 4:26:44 PM test.AbstractOrderManagerTest$TestOrderProcssor process
+INFO:     Processed order: StopBuyOrder for Account russ: 100 shares of SYMB at or above 10005 [75]
+Aug 08, 2014 4:26:44 PM test.AbstractOrderManagerTest testOrderManager
+INFO: Adjusting price to: 9995
+Aug 08, 2014 4:26:44 PM test.AbstractOrderManagerTest$TestOrderProcssor process
+INFO:     Processed order: StopSellOrder for Account russ: 100 shares of SYMB at or below 9995 [77]
+Aug 08, 2014 4:26:44 PM test.AbstractOrderManagerTest testOrderManager
+INFO: Adjusting price to: 10005
+Aug 08, 2014 4:26:44 PM test.AbstractOrderManagerTest$TestOrderProcssor process
+INFO:     Processed order: StopBuyOrder for Account russ: 100 shares of SYMB at or above 10005 [75]
+Aug 08, 2014 4:26:44 PM test.AbstractOrderManagerTest testOrderManager
+INFO: Adjusting price to: 9995
+Aug 08, 2014 4:26:44 PM test.AbstractOrderManagerTest$TestOrderProcssor process
+INFO:     Processed order: StopSellOrder for Account russ: 100 shares of SYMB at or below 9995 [77]
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running test.OrderQueueTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+
+Results :
+
+Failed tests:   testBrokerExchangeOpen(test.BrokerTest): Market orders should be processed, the market is open, 0 orders executed, expected 3.
+  testBrokerExchangeClosed(test.BrokerTest): Market orders should be processed once the market opens, 0 orders executed, expected 3.
+
+Tests in error: 
+  testGetAccount(test.BrokerTest)
+  testDeleteAccount(test.BrokerTest)
+
+Tests run: 29, Failures: 2, Errors: 2, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 30.101 s
+[INFO] Finished at: 2014-08-08T16:26:45-08:00
+[INFO] Final Memory: 5M/17M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project cp130: There are test failures.
+[ERROR] 
+[ERROR] Please refer to C:\Users\Chester\workspace\beardcl-04\target\surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
